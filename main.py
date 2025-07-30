@@ -32,4 +32,10 @@ st.markdown(
     **Video Title:** Health Universe - Quick Start Video  
 
     **Description:**  
-    This video provide
+    This video provides a brief introduction to adding new users and getting started 
+    with deploying a quick Streamlit application.
+
+    **[Link to Documentation](https://docs.healthuniverse.com/overview)**
+    """,
+    unsafe_allow_html=True
+)
