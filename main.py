@@ -6,7 +6,7 @@ st.set_page_config(page_title="Health Universe - Quick Start Video", layout="cen
 
 # Display Logo
 logo = Image.open("02_HU-Logo_Horizontal.png")  # Ensure the file is in the app directory
-st.image(logo, use_column_width=True)
+st.image(logo, use_container_width=True)
 
 # Main Title
 st.title("Health Universe - Quick Start Video")
