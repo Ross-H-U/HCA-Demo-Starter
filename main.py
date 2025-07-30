@@ -1,18 +1,17 @@
 import streamlit as st
+from PIL import Image
 
-# App Title
-st.set_page_config(page_title="Loom Video Player", layout="centered")
+# App Title and Layout
+st.set_page_config(page_title="Health Universe - Quick Start Video", layout="centered")
 
-st.title("Health Universe Video Hub")
+# Display Logo
+logo = Image.open("02_HU-Logo_Horizontal.png")  # Ensure the file is in the app directory
+st.image(logo, use_column_width=True)
 
-# Logo Upload Section
-st.subheader("Upload Health Universe Logo")
-logo_file = st.file_uploader("Upload your Health Universe logo (PNG/JPG preferred)", type=["png", "jpg", "jpeg"])
-if logo_file:
-    st.image(logo_file, caption="Health Universe Logo", use_column_width=True)
+# Main Title
+st.title("Health Universe - Quick Start Video")
 
-# Video Section
-st.subheader("Featured Loom Video")
+# Loom Video Embed
 st.markdown(
     """
     <iframe 
@@ -27,14 +26,10 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Video Description
-st.subheader("Video Description")
+# Footer Description
 st.markdown(
     """
     **Video Title:** Health Universe - Quick Start Video  
-    **Description:**  
-    This video provides a breif introduction to adding new users and getting started with deploying a quick streamlit application.
 
-    **[Link to Documentation](https://docs.healthuniverse.com/overview)**
-    """
-)
+    **Description:**  
+    This video provide
